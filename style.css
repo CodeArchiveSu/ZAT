@@ -1,0 +1,255 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #ffdd00;
+  font-family: monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  height: 100vh;
+}
+
+.container {
+  width: 95vw;
+  height: auto;
+  position: relative;
+}
+
+.textBox {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: rgb(0, 0, 0);
+  text-align: center;
+  margin-bottom: 1vh;
+}
+
+.textBox div {
+  background-color: white;
+  margin: 1px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+#secondButtonBoxGrey {
+  margin-left: -4vw;
+}
+
+#secondButtonBoxRed {
+  margin-right: -4vw;
+}
+
+#yellowBtn {
+  width: 10vh;
+  height: 10vh;
+  border-radius: 50%;
+  background-color: #ffdd00;
+  border: 2px solid black;
+}
+
+.buttonBox {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  margin-bottom: 0.5vh;
+}
+
+.lastButtonBox {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  margin-top: 3vh;
+}
+
+.firstredCircle {
+  width: 9vh;
+  height: 9vh;
+  border-radius: 50%;
+  background-color: #d40000bd;
+  border: 2px solid #cf0909;
+  position: absolute;
+}
+
+.secondredCircle {
+  width: 7vh;
+  height: 7vh;
+  border-radius: 50%;
+  background-color: #d40000bd;
+  border: 2px solid #cf0909;
+  position: absolute;
+}
+
+.thirdredCircle {
+  width: 5vh;
+  height: 5vh;
+  border-radius: 50%;
+  background-color: #d40000bd;
+  border: 2px solid #cf0909;
+  position: absolute;
+}
+
+.fourthredCircle {
+  width: 3vh;
+  height: 3vh;
+  border-radius: 50%;
+  background-color: #d40000bd;
+  border: 2px solid #cf0909;
+  position: absolute;
+}
+
+.fifthredCircle {
+  width: 1vh;
+  height: 1vh;
+  border-radius: 50%;
+  background-color: #d40000bd;
+  border: 2px solid #cf0909;
+  position: absolute;
+}
+
+.firstgreenCircle {
+  width: 9vh;
+  height: 9vh;
+  border-radius: 50%;
+  background-color: #006c12bf;
+  border: 2px solid #006c12;
+  position: absolute;
+}
+
+.secondgreenCircle {
+  width: 7vh;
+  height: 7vh;
+  border-radius: 50%;
+  background-color: #006c12bf;
+  border: 2px solid #006c12;
+  position: absolute;
+}
+
+.thirdgreenCircle {
+  width: 5vh;
+  height: 5vh;
+  border-radius: 50%;
+  background-color: #006c12bf;
+  border: 2px solid #006c12;
+  position: absolute;
+}
+
+.fourthgreenCircle {
+  width: 3vh;
+  height: 3vh;
+  border-radius: 50%;
+  background-color: #006c12bf;
+  border: 2px solid #006c12;
+  position: absolute;
+}
+
+.fifthgreenCircle {
+  width: 1vh;
+  height: 1vh;
+  border-radius: 50%;
+  background-color: #006c12bf;
+  border: 2px solid #006c12;
+  position: absolute;
+}
+
+.secondButtonBox {
+  margin-top: 4vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  grid-gap: 5vh;
+  position: relative;
+  margin-bottom: 1vh;
+}
+
+#Zeitabbruchtaste {
+  position: absolute;
+  top: -4vh;
+  left: 0;
+  font-family: sans-serif;
+  font-size: 23px;
+  padding: 3px 8px 3px 8px;
+  background-color: rgb(255, 255, 255);
+  transform: rotate(-3deg);
+}
+
+.greyBtn {
+  width: 12vh;
+  height: 12vh;
+  border-radius: 50%;
+  background-color: #9a9a9a;
+}
+
+.redBtn {
+  width: 9vh;
+  height: 9vh;
+  border-radius: 50%;
+  background-color: #bd0000;
+  border: 3px solid black;
+}
+
+.multipleCircle {
+  width: 9vh;
+  height: 9vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#firstCircle {
+  width: 9vh;
+  height: 9vh;
+  border-radius: 50%;
+  background-color: #000000;
+  border: 2px solid white;
+}
+
+#secondCircle {
+  width: 7vh;
+  height: 7vh;
+  position: absolute;
+  border-radius: 50%;
+  background-color: #000000;
+  border: 2px solid white;
+}
+
+#thirdCircle {
+  width: 5vh;
+  height: 5vh;
+  position: absolute;
+  border-radius: 50%;
+  background-color: #000000;
+  border: 2px solid white;
+}
+
+#fourthCircle {
+  width: 3vh;
+  height: 3vh;
+  position: absolute;
+  border-radius: 50%;
+  background-color: #000000;
+  border: 2px solid white;
+}
+
+#fifthCircle {
+  width: 1vh;
+  height: 1vh;
+  position: absolute;
+  border-radius: 50%;
+  background-color: #000000;
+  border: 2px solid white;
+}
+
+.lastText {
+  background-color: white;
+  border: 1px solid black;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  text-align: center;
+  margin-top: 2vh;
+}

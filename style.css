@@ -75,6 +75,23 @@ body {
   position: absolute;
 }
 
+.redGlow {
+  box-shadow: 0 0 10px 5px rgba(212, 0, 0, 0.5);
+  animation: redFlicker 1.5s infinite;
+}
+
+@keyframes redFlicker {
+  0%,
+  100% {
+    box-shadow: 0 0 10px 5px rgba(212, 0, 0, 0.5);
+    opacity: 1;
+  }
+  50% {
+    box-shadow: 0 0 15px 10px rgba(255, 0, 0, 0.8);
+    opacity: 0.6;
+  }
+}
+
 .secondredCircle {
   width: 7vh;
   height: 7vh;
@@ -154,6 +171,23 @@ body {
   background-color: #006c12bf;
   border: 2px solid #006c12;
   position: absolute;
+}
+
+.greenGlow {
+  box-shadow: 0 0 10px 5px rgba(0, 172, 29, 0.75);
+  animation: greenFlicker 1.5s infinite;
+}
+
+@keyframes greenFlicker {
+  0%,
+  100% {
+    box-shadow: 0 0 10px 5px #00ac1dbf(212, 0, 0, 0.5);
+    opacity: 1;
+  }
+  50% {
+    box-shadow: 0 0 20px 10px#177727bf (212, 0, 0, 0.8);
+    opacity: 0.6;
+  }
 }
 
 .secondButtonBox {

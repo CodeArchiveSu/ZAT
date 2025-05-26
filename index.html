@@ -84,32 +84,53 @@
       let redtoggle = false;
       let greentoggle = false;
 
-      const addGlow = () => {
-        redtoggle = !redtoggle;
-        greentoggle = !greentoggle;
+      const turnRedOn = () => {
+        if (redCircle.length > 0) redCircle[0].classList.add("redGlow");
+        for (let i = 0; i < greenCircles.length; i++) {
+          greenCircles[i].classList.remove("greenGlow");
+        }
+        redtoggle = true;
+        greentoggle = false;
+      };
 
-        console.log("redtoggle greentoggle", redtoggle, greentoggle);
-        if (redCircle.length > 0) {
-          if (redtoggle) {
-            redCircle[0].classList.add("redGlow");
-          } else {
-            redCircle[0].classList.remove("redGlow");
-          }
+      const turnRedOff = () => {
+        if (redCircle.length > 0) redCircle[0].classList.remove("redGlow");
+        redtoggle = false;
+      };
+
+      const turnGreenOn = () => {
+        for (let i = 0; i < greenCircles.length; i++) {
+          greenCircles[i].classList.add("greenGlow");
+        }
+        if (redCircle.length > 0) redCircle[0].classList.remove("redGlow");
+        greentoggle = true;
+        redtoggle = false;
+      };
+
+      const turnGreenOff = () => {
+        for (let i = 0; i < greenCircles.length; i++) {
+          greenCircles[i].classList.remove("greenGlow");
+        }
+        greentoggle = false;
+      };
+
+      const addGlow = () => {
+        if (redtoggle) {
+          // 빨간불 켜진 상태면 끄기
+          turnRedOff();
+        } else {
+          // 꺼져있으면 켜고 초록불 끄기
+          turnRedOn();
         }
       };
 
       const addgreenGlow = () => {
-        greentoggle = !greentoggle;
-        redtoggle = !redtoggle;
-
-        console.log("redtoggle greentoggle", redtoggle, greentoggle);
-        for (let i = 0; i < greenCircles.length; i++) {
-          if (greentoggle) {
-            greenCircles[i].classList.add("greenGlow");
-            console.log("redtoggle greentoggle", redtoggle, greentoggle);
-          } else {
-            greenCircles[i].classList.remove("greenGlow");
-          }
+        if (greentoggle) {
+          // 초록불 켜진 상태면 끄기
+          turnGreenOff();
+        } else {
+          // 꺼져있으면 켜고 빨간불 끄기
+          turnGreenOn();
         }
       };
 

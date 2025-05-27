@@ -219,6 +219,11 @@ body {
   background-color: #9a9a9a;
 }
 
+.greyBtn:hover {
+  transform: scale(0.9);
+  transition: all 0.3s linear;
+}
+
 .redBtn {
   width: 9vh;
   height: 9vh;

@@ -217,12 +217,17 @@ body {
   height: 12vh;
   border-radius: 50%;
   background-color: #9a9a9a;
+  transition: transform 0.3s ease;
 }
 
-.greyBtn:active {
+.hovered {
+  transform: scale(0.8);
+}
+
+/* .greyBtn:active {
   transform: scale(0.9);
   transition: all 0.3s linear;
-}
+} */
 
 .redBtn {
   width: 9vh;

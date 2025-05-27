@@ -130,6 +130,22 @@
         }
       };
 
+      const elements = document.querySelectorAll(".greyBtn");
+
+      elements.forEach((element) => {
+        element.addEventListener("touchstart", (e) => {
+          console.log("touched", e.target);
+
+          e.currentTarget.classList.add("hovered");
+        });
+
+        element.addEventListener("touchend", (e) => {
+          console.log("touchend", e.target);
+
+          e.currentTarget.classList.remove("hovered");
+        });
+      });
+
       Zeitabbruchtaste.addEventListener("click", addGlow);
       Zp10.addEventListener("click", addGlow);
       Zp9.addEventListener("click", addgreenGlow);

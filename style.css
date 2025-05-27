@@ -219,7 +219,7 @@ body {
   background-color: #9a9a9a;
 }
 
-.greyBtn:hover {
+.greyBtn:active {
   transform: scale(0.9);
   transition: all 0.3s linear;
 }
